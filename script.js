@@ -25,17 +25,22 @@ function mostrarCampos() {
         // Adiciona os campos necessários
         divGrupo.innerHTML = `
         <h3>${i}° Dependente</h3>
-        <label for="campo1-${i}">Nome:</label>
-        <input type="text" id="campo1-${i}" name="campo1-${i}" placeholder="Nome Completo" required>
+        <label for="nomeDependente-${i}">Nome:</label>
+        <input type="text" id="nomeDependente-${i}" name="nomeDependente-${i}" placeholder="Nome Completo" required>
         <br />
-        <label for="campo2-${i}">Data de Nascimento:</label>
-        <input type="date" id="campo2-${i}" name="campo2-${i}" required>
+        <label for="dataNascimentoDependente-${i}">Data de Nascimento:</label>
+        <input type="date" id="dataNascimentoDependente-${i}" name="dataNascimentoDependente-${i}" required>
         <br />
-        <label for="campo3-${i}">Parentesco:</label>
-        <input type="text" id="campo3-${i}" name="campo3-${i}" placeholder="Filho" required>
+        <label for="parentescoDependente-${i}">Parentesco:</label>
+        <input type="text" id="parentescoDependente-${i}" name="parentescoDependente-${i}" placeholder="Filho" required>
+        <select id="parentescoDependente-${i}" name="parentescoDependente-${i}" required>
+            <option value="filho-filha">Filho/Filha</option>
+            <option value="pai-mae">Pai/Mãe</option>
+            <option value="conjuge">Cônjuge</option>
+        </select>
         <br />
-        <label for="campo4-${i}">Sexo:</label>
-        <input type="text" id="campo4-${i}" name="campo4-${i}" placeholder="Masculino/Feminino" required>
+        <label for="sexoDependente-${i}">Sexo:</label>
+        <input type="text" id="sexoDependente-${i}" name="sexoDependente-${i}" placeholder="Masculino/Feminino" required>
         <br />
         `;
         // Adiciona o novo grupo à div dos grupos de campos
