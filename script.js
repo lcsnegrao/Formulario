@@ -32,7 +32,6 @@ function mostrarCampos() {
         <input type="date" id="dataNascimentoDependente-${i}" name="dataNascimentoDependente-${i}" required>
         <br />
         <label for="parentescoDependente-${i}">Parentesco:</label>
-        <input type="text" id="parentescoDependente-${i}" name="parentescoDependente-${i}" placeholder="Filho" required>
         <select id="parentescoDependente-${i}" name="parentescoDependente-${i}" required>
             <option value="filho-filha">Filho/Filha</option>
             <option value="pai-mae">Pai/Mãe</option>
