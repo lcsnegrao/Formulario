@@ -39,7 +39,10 @@ function mostrarCampos() {
         </select>
         <br />
         <label for="sexoDependente-${i}">Sexo:</label>
-        <input type="text" id="sexoDependente-${i}" name="sexoDependente-${i}" placeholder="Masculino/Feminino" required>
+        <select id="sexoDependente-${i}" name="sexoDependente-${i}" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
         <br />
         `;
         // Adiciona o novo grupo à div dos grupos de campos
